@@ -1,0 +1,21 @@
+{
+  "name": "agenopoly-contracts",
+  "version": "0.1.0",
+  "description": "Smart contracts for Agenopoly — on-chain multi-agent trading coordination",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node --fork https://arb1.arbitrum.io/rpc",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network arbitrumSepolia",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network arbitrum"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.22.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "ethers": "^6.11.0"
+  }
+}
